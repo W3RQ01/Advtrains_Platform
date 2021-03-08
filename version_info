@@ -1,0 +1,36 @@
+#!/bin/bash
+
+find *.lua *.txt textures  -type f | fgrep -v textures/advtrains_platform_version_node.png | head -12 >.filelist
+
+echo -n "" >.datelist
+
+cat .filelist | while read line ; do
+	echo "$(date --iso=m -r ${line})  ${line}" >>.datelist
+done
+
+
+
+(echo "$(date --iso=m)  [$(basename "$(realpath . )")]" ; cat .datelist | sed 's/  textures/  t/' | sort -r ) | anytopnm >.image
+
+WIDTH=$(head -2 .image | tail -1 | awk '{ print $1 }')
+HEIGHT=$(head -2 .image | tail -1 | awk '{ print $2 }')
+
+echo $WIDTH
+echo $HEIGHT
+
+if [ $WIDTH -gt $HEIGHT ] ; then
+	ppmmake white 1 $((WIDTH-HEIGHT)) >.image_temp
+	pnmcat -tb .image .image_temp >.image2
+fi
+
+if [ $WIDTH -lt $HEIGHT ] ; then
+        ppmmake white  $((HEIGHT-WIDTH)) 1 >.image_temp
+        pnmcat -lr .image .image_temp >.image2
+fi
+
+
+pnmtopng .image2 >textures/advtrains_platform_version_node.png
+
+
+
+
