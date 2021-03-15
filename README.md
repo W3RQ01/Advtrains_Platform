@@ -1,5 +1,5 @@
 # Advtrains_Platform
-A mod that provides different tipes of platforms maded oof various materials. 
+A mod that provides different tipes of platforms maded of various materials. 
 This mod is originally made by Och_Noe, improved by Montandalar/Blockhead and W3RQ01 added more platforms materials.
 All the platforms have a crafting recipe, If you are in survival, you have to use a picaxe to break the platforms because: an acacia wood platform has only the textures of the acacia planks, for the rest (the shape and the sound) is of the default stonebrick platform that you can find in the Advtrains Mod.
 How to install it:
