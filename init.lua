@@ -96,7 +96,8 @@ list_wood_maple = {
 --  metal blocks
 
 list_moreores = {
-   "moreores:mithril_block" }
+   "moreores:mithril_block" 
+   "moreores:silver_block" }
 
 
 -- wool
