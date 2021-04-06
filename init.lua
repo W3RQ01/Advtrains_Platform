@@ -46,8 +46,15 @@ list_moreblocks = {
    "moreblocks:stone_tile", 
 -- added 2019-01-19
    "moreblocks:split_stone_tile", 
-   "moreblocks:split_stone_tile_alt", 
-}
+   "moreblocks:split_stone_tile_alt",
+-- added 2021-04-06	
+   "moreblocks:coal_stone",
+   "moreblocks:iron_stone",	
+   "moreblocks:iron_checker",
+   "moreblocks:cactus_checker",
+   "moreblocks:coal_checker",
+   "moreblocks:tar",	
+} 
 
 list_ethereal = {
    "ethereal:icebrick",
@@ -96,8 +103,8 @@ list_wood_maple = {
 --  metal blocks
 
 list_moreores = {
-   "moreores:mithril_block" 
-   "moreores:silver_block" }
+   "moreores:mithril_block", 
+   "moreores:silver_block", }
 
 
 -- wool
@@ -108,8 +115,16 @@ list_moreores = {
 -- technic  - added 2019-03-11
 
 list_technic =  {
-	"technic:marble" 
-        "technic:marble_bricks"}
+	"technic:marble", 
+        "technic:marble_bricks",}
+
+-- bakedclay  - added 2021-04-06
+
+list_bakedclay =  {
+	"bakedclay:black", 
+        "bakedclay:dark_clay",
+        "bakedclay:red",
+        "bakedclay:blue",}
 	
 
 
@@ -167,6 +182,13 @@ if minetest.get_modpath("technic") then
    end
 end
 
+
+-- added 2021-04-06
+if minetest.get_modpath("bakedclay") then
+   for _,name in pairs(list_bakedclay) do
+      register_platform(own_name,name)   
+   end
+end
 
 
 local woodpath_lengths = { 
