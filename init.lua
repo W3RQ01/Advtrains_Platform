@@ -116,7 +116,10 @@ list_moreores = {
 
 list_technic =  {
 	"technic:marble", 
-        "technic:marble_bricks",}
+-- added 2021-04-06
+        "technic:marble_bricks",
+-- added 2021-04-09	
+        "technic:granite",}
 
 -- bakedclay  - added 2021-04-06
 
