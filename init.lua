@@ -127,7 +127,9 @@ list_bakedclay =  {
 	"bakedclay:black", 
         "bakedclay:dark_clay",
         "bakedclay:red",
-        "bakedclay:blue",}
+        "bakedclay:blue",
+-- added 2021-04-09
+        "bakedclay:white",}
 	
 
 
