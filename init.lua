@@ -58,7 +58,10 @@ list_moreblocks = {
 
 list_ethereal = {
    "ethereal:icebrick",
-   "ethereal:bamboo_dirt" }
+   "ethereal:bamboo_dirt",
+-- added 2021-05-26
+   "ethereal:blue_marble_tile",
+   "ethereal:blue_marble_bricks"}
 
 
 -- added 2018-10-16
