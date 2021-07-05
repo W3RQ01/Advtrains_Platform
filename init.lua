@@ -1,7 +1,6 @@
 -- all nodes that do not fit in any other category
 -- Author:  Och_Noe, Montandalar/Blockhead, W3RQ01
--- Licence: LGPL 2.1 
--- 
+-- Licence: LGPL 2.1  
 
 
 local own_name = "advtrains_platform"
